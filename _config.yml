@@ -42,7 +42,10 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+# Enable per-post asset folders so each post can have its own images/assets.
+# When true, Hexo will create a folder next to the post markdown file named
+# like `post-name/` to hold images. Use in Markdown as `![alt](/bd/source/_posts/post-name/image.jpg)`
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
