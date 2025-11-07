@@ -1,5 +1,9 @@
 name: Deploy Hexo to gh-pages
 
+# Ensure the workflow has explicit permission to write repository contents
+permissions:
+  contents: write
+
 on:
   push:
     branches:
@@ -28,6 +32,16 @@ jobs:
 
       - name: Build site
         run: npm run build
+
+      - name: Show `public/` contents (debug)
+        run: |
+          echo "== list public dir =="
+          if [ -d ./public ]; then
+            ls -la ./public || true
+            find ./public -maxdepth 2 -print || true
+          else
+            echo "public directory not found"
+          fi
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
