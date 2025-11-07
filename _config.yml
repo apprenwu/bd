@@ -13,7 +13,9 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+## For GitHub Pages project site, set URL and root so asset links work under /bd/
+url: https://apprenwu.github.io/bd
+root: /bd/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
