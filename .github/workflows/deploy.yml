@@ -18,10 +18,13 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          # Hexo v8 requires Node >=20.19.0; use Node 20.x in the runner
+          node-version: '20'
 
       - name: Install dependencies
-        run: npm ci
+        # CI previously failed with `npm ci` due to lockfile mismatch and engine errors.
+        # Use `npm install` here so the runner can resolve packages with Node 20.
+        run: npm install
 
       - name: Build site
         run: npm run build
