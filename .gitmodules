@@ -1,0 +1,3 @@
+[submodule "themes/world"]
+	path = themes/world
+	url = https://github.com/kiwirafe/hexo-theme-world.git
