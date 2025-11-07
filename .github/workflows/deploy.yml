@@ -35,4 +35,5 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           allow_empty_commit: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # peaceiris/actions-gh-pages expects `github_token` (not `token`)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
