@@ -5,8 +5,6 @@ permalink: /introduction-jailbreak/
 tags:
 ---
 
-### 越狱流程介绍
-
 首先桌面有 **TrollStore**和**Dopamine**两个App不要卸载，如图：
 ![app](introduction-jailbreak/1.jpg)
 
