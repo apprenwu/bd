@@ -1,6 +1,6 @@
 ---
 title: 酒店-收藏列表操作流程
-date: 2025-11-14 00:00:00
+date: 2025-11-14 00:00:04
 permalink: /task-hotel-collection
 tags:
 ---

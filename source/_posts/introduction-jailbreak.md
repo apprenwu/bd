@@ -1,6 +1,6 @@
 ---
 title: 越狱流程介绍
-date: 2000-01-01 00:00:04
+date: 2025-11-14 00:00:01
 permalink: /introduction-jailbreak/
 tags:
 ---
